@@ -1,0 +1,9 @@
+		.body{
+			max-width: 500px;
+			height: auto;
+			margin: auto;
+			font-family: 'Nunito', sans-serif;
+			text-align: center;
+			margin-top: 200px;
+			font-size: 18px;
+		}
