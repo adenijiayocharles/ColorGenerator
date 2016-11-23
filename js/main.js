@@ -20,6 +20,15 @@
 	    if(e.keyCode == 32){
 	        var rgb = getColors(0,255);
 			document.getElementsByTagName("body")[0].style.backgroundColor ='rgb(' + rgb.join(',') + ')';
-			document.getElementById("view").innerHTML = rgb;
+			document.getElementById("view").innerHTML = "rgb(" + rgb + ")";
+			document.getElementById("body").style.marginTop = (200 - 24) + "px";
+
+			//get all bottom boxes
+			var bottomBox = document.getElementsByClassName("box-bottom");
+			var count = bottomBox.length;
+			for(var j = 0; j < count; j++){
+				rgb = getColors(0,255);
+				bottomBox[j].style.background = 'rgb(' + rgb.join(',') + ')';
+			}
 	    }
 	};	
